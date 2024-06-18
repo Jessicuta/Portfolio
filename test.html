@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Test page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class = header>
+        <nav >
+            <div class = "nav-links" id="navLinks">
+                <div id="menu-container">
+                    <img src="icon/x-square-solid-24.png" alt="x" onclick = "hideMenu()">
+                </div>
+                <ul>
+                    <li> <a href = "home.html"> HOME </a> </li>
+                    <li> <a href = "#project"> PROJECT </a> </li>
+                    <li> <a href = "aboutMe.html"> ABOUT ME</a> </li>
+                    <li> <a href = "projects.html"> CONTACT </a> </li>
+                </ul>
+            </div>
+            <div id="menu-container">
+                <img src="icon/menu-regular-24.png" alt="bare" onclick = "showMenu()">
+            </div>
+           
+        </nav>
+    </section>
+    
+   <section class = "present">
+        <h1>
+            Hi there
+        </h1>
+        <p class = "intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Et malesuada fames ac turpis egestas sed tempus urna. Nec tincidunt praesent semper feugiat. 
+            Vestibulum lorem sed risus ultricies tristique. Erat nam at lectus urna duis convallis. 
+            Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. 
+            Venenatis lectus magna fringilla urna. Porta nibh venenatis cras sed felis eget velit. 
+            Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Vitae justo eget magna fermentum iaculis. 
+            Tincidunt tortor aliquam nulla facilisi cras fermentum. 
+            Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. 
+            Ultricies mi quis hendrerit dolor magna eget. Non quam lacus suspendisse faucibus.
+        </p>
+   </section>
+
+    <section class = "project" id = "project">
+        <h1> WHAT I'VE DONE</h1>
+        <p> so far </p>
+
+        <div class = "row">
+            <div class = project-col>
+                <h3> Project 1</h3>
+                <p>
+                   I dont know what to say 
+                </p>
+            </div>
+            <div class = project-col>
+                <h3> Project 2</h3>
+                <p>
+                   I dont know what to say 
+                </p>
+            </div>
+            <div class = project-col>
+                <h3> Project 3</h3>
+                <p>
+                   I dont know what to say 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                header.style.top = "-100px"; // Adjust the value as needed
+            } else {
+                // Scroll up
+                header.style.top = "0";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+
+        function hideMenu() {
+            document.getElementById('navLinks').style.display = 'none';
+        }
+
+        function showMenu() {
+            document.getElementById('navLinks').style.display = 'flex';
+        }
+    </script>
+
+</body>
+</html>
