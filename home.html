@@ -55,37 +55,54 @@
         <h1> WHAT I'VE DONE</h1>
         <p> so far </p>
 
-        <div class = "row">
-            <div class = project-col>
-                <h3> Project 1</h3>
-                <p>
-                   I dont know what to say 
-                </p>
+        <div class="row">
+            <div class="project-col">
+                <div class="image-project">
+                    <a href="https://jessicuta.github.io/Animal/" target="_blank">
+                    <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog"></a>
+                </div>
+                <h3>Adoption site web</h3>
+                <p>Just a project to play with different element in html, css and javascript</p>
             </div>
-            <div class = project-col>
-                <h3> Project 2</h3>
-                <p>
-                   I dont know what to say 
-                </p>
+            <div class="project-col">
+                <div class="image-project">
+                    <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog">
+                </div>
+                <h3>Project 2</h3>
+                <p>I don't know what to say</p>
             </div>
-            <div class = project-col>
-                <h3> Project 3</h3>
-                <p>
-                   I dont know what to say 
-                </p>
+            <div class="project-col">
+                <div class="image-project">
+                    <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog">
+                </div>
+                <h3>Project 3</h3>
+                <p>I don't know what to say</p>
             </div>
         </div>
     </section>
 
     <script>
-        var navLinks = document.getElementById("navLinks");
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
 
-        function showMenu(){
-            navLinks.style.right = "0";
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                header.style.top = "-100px"; // Adjust the value as needed
+            } else {
+                // Scroll up
+                header.style.top = "0";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+
+        function hideMenu() {
+            document.getElementById('navLinks').style.display = 'none';
         }
 
-        function hideMenu(){
-            navLinks.style.right = "-200px";
+        function showMenu() {
+            document.getElementById('navLinks').style.display = 'flex';
         }
     </script>
 

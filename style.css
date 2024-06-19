@@ -4,11 +4,15 @@
     font-family: "Poppins", sans-serif;
 }
 /* ---- header -----*/
-.header{
-   /* min-height: 100vh;*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
     background-color: #00174d;
-    position: relative;
+    padding: 0.5rem; /* Slimmer padding */
 }
 
 nav{
@@ -16,12 +20,15 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem ; /* Adjust padding */
 }
 
 .nav-links{
     flex:1;
     text-align: right;
+    padding: 0 6%; /* Adjust padding*/ 
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -89,14 +96,15 @@ nav{
 }
 /* -----Presentation----*/
 .present{
-    min-height: 92vh;
-    background-image: url(icon/1c51c7efcbe30ed7e7de6fcd162530f9.jpg) ;
+    min-height: 100vh;
+    background-image: url(icon/StockCake-Digital\ Connectivity\ Mesh_1718752081.jpg) ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .present h1{
+    padding-top: 20%;
     text-align: center;
     color: white;
 }
@@ -156,6 +164,16 @@ h3{
     margin: 10px 0;
 }
 
+.image-project {
+    width: 100%; /* Adjust width to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-project img {
+    width: 75%; /* Adjust width to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .project-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
@@ -165,3 +183,4 @@ h3{
         flex-direction: column;
     }
 }
+
