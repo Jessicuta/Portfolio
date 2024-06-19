@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script type="text/javascript" src="action.js"></script>
+
 </head>
 <body>
     <section class = header>
@@ -24,7 +26,7 @@
                     <li> <a href = "home.html"> HOME </a> </li>
                     <li> <a href = "#project"> PROJECT </a> </li>
                     <li> <a href = "aboutMe.html"> ABOUT ME</a> </li>
-                    <li> <a href = "projects.html"> CONTACT </a> </li>
+                    <li> <a href = "contact.html"> CONTACT </a> </li>
                 </ul>
             </div>
             <div id="menu-container">
@@ -66,14 +68,16 @@
             </div>
             <div class="project-col">
                 <div class="image-project">
-                    <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog">
+                    <a href="https://jessicuta.github.io/Animal/" target="_blank">
+                        <img src="icon/pexels-zenzazione-2922140.jpg" alt="Car"></a>
                 </div>
-                <h3>Project 2</h3>
-                <p>I don't know what to say</p>
+                <h3>Sell and Buy Cars</h3>
+                <p>My first experience with database and the experience of e-commerce</p>
             </div>
             <div class="project-col">
                 <div class="image-project">
-                    <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog">
+                    <a href="https://jessicuta.github.io/Animal/" target="_blank">
+                        <img src="icon/pexels-simonakidric-2607544.jpg" alt="Dog"></a>
                 </div>
                 <h3>Project 3</h3>
                 <p>I don't know what to say</p>
@@ -81,30 +85,6 @@
         </div>
     </section>
 
-    <script>
-        let lastScrollTop = 0;
-        const header = document.querySelector('.header');
-
-        window.addEventListener("scroll", function() {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentScroll > lastScrollTop) {
-                // Scroll down
-                header.style.top = "-100px"; // Adjust the value as needed
-            } else {
-                // Scroll up
-                header.style.top = "0";
-            }
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        }, false);
-
-        function hideMenu() {
-            document.getElementById('navLinks').style.display = 'none';
-        }
-
-        function showMenu() {
-            document.getElementById('navLinks').style.display = 'flex';
-        }
-    </script>
 
 </body>
 </html>
