@@ -21,17 +21,39 @@
                     <img src="icon/x-square-solid-24.png" alt="x" onclick = "hideMenu()">
                 </div>
                 <ul>
-                    <li> <a href = "home.html"> HOME </a> </li>
-                    <li> <a href = "#project"> PROJECT </a> </li>
-                    <li> <a href = "aboutMe.html"> ABOUT ME</a> </li>
-                    <li> <a href = "projects.html"> CONTACT </a> </li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="home.html#project">PROJECT</a></li>
+                    <li><a href="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <div id="menu-container">
                 <img src="icon/menu-regular-24.png" alt="bare" onclick = "showMenu()">
             </div>
-           
         </nav>
+    </section>
+
+    <section class = "contact">
+        <h1>
+            Contact me !
+        </h1>
+        <p>
+            Let's talk a bit
+        </p>
+        <div class="form-container">
+            <form action="send_email.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 </body>
 </html>
