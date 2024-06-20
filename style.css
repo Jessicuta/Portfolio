@@ -230,3 +230,8 @@ h3{
 .form-container button:hover {
     background-color: #45a049;
 }
+
+.form-container span{
+    font-size: 14 px;
+    color: red;
+}

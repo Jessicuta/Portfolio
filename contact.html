@@ -41,19 +41,27 @@
             Let's talk a bit
         </p>
         <div class="form-container">
-            <form action="send_email.php" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="9e68a0e9-028a-4537-9b7c-bd8051979a5d">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
+                <span id="name-error"></span>
+                <input type="text" id="name" name="name" onkeyup="validateName()" required>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
+                <span id="email-error"></span>
+                <input type="email" id="email" name="email" onkeyup="validateEmail()" required>
+
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <span id="message-error"></span>
+                <textarea id="message" name="message" rows="6" onkeyup="validateMessage()" required></textarea>
+
+                
                 
                 <button type="submit">Send</button>
             </form>
         </div>
     </section>
+    <script type="text/javascript" src="action.js"></script>
 </body>
 </html>
