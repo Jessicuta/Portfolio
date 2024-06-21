@@ -235,3 +235,40 @@ h3{
     font-size: 14 px;
     color: red;
 }
+
+/* ------ ABOUT ME --------*/
+
+.info {
+    padding: 100px; /* Optional: Add padding around the container */
+    background-color: #45a049;
+}
+
+.info-container {
+    display: flex; /* Use Flexbox to align items horizontally */
+    align-items: center; /* Vertically center the items */
+    background-color: #00174d;
+}
+
+#info-profil {
+    flex: 1; /* Take up equal space */
+    display: flex; /* Center the image inside */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-color: #777;
+    width: 100px;
+    height: 100px;
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+#info-profil img {
+    width: 75%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale the image to cover the container, preserving aspect ratio */
+    background-color: #f44336; /* Background color of the image container */
+}
+
+#info-text {
+    flex: 1; /* Take up equal space */
+    padding: 20px; /* Add padding for better spacing */
+    color: black; /* Change text color if needed */
+}
