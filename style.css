@@ -150,7 +150,7 @@ p{
 
 .project-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #E9EBF3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -185,7 +185,15 @@ h3{
 }
 
 /* ------CONTACT ------->*/
-
+.contact{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 95vh; /* Adjust the height as needed */
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding */
+    flex-direction: column;
+}
 .contact h1{
     padding-top: 10%;
     text-align: center;
@@ -197,7 +205,7 @@ h3{
 }
 
 .form-container {
-    max-width: 400px;
+    width: 400px;
     margin: 0 auto;
     padding: 30px;
     border: 1px solid #e0eef8;
@@ -239,36 +247,141 @@ h3{
 /* ------ ABOUT ME --------*/
 
 .info {
-    padding: 100px; /* Optional: Add padding around the container */
-    background-color: #45a049;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 95vh; /* Adjust the height as needed */
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding */
+    flex-direction: column;
+}
+
+.info-table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Collapse the borders between cells */
+}
+
+.info-table td {
+    vertical-align: top; /* Align content to the top of cells */
+    padding: 10px; /* Add padding */
 }
 
 .info-container {
     display: flex; /* Use Flexbox to align items horizontally */
     align-items: center; /* Vertically center the items */
-    background-color: #00174d;
+    height: 50vh;
+    width: 150vh;
+    text-align: center;
 }
 
 #info-profil {
-    flex: 1; /* Take up equal space */
-    display: flex; /* Center the image inside */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    background-color: #777;
-    width: 100px;
-    height: 100px;
+    display: flex ;
+    width: 300px;
+    height: 30vh;
     overflow: hidden; /* Hide any content that overflows the container */
 }
 
 #info-profil img {
-    width: 75%; /* Ensure the image fills the container */
+    width: 100%; /* Ensure the image fills the container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Scale the image to cover the container, preserving aspect ratio */
     background-color: #f44336; /* Background color of the image container */
+}
+
+.resume-button button {
+    margin-top: 20px; /* Add space between the table and the button */
+    width: 100%;
+    padding: 10px;
+    background-color: #4c63af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.resume-button button:hover {
+    background-color: #45a049;
 }
 
 #info-text {
     flex: 1; /* Take up equal space */
     padding: 20px; /* Add padding for better spacing */
     color: black; /* Change text color if needed */
+}
+
+#linkedin img,
+#github img,
+#insta img {
+    width: 40px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space around the images */
+    display: inline-block; /* Display the images next to each other */
+    
+            }
+#info-text div{
+    display: inline-block; /* Display the images next to each other */
+}
+#insta img {
+    width: 40px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #FF8C61;
+}
+#github img{
+    background-color: #FF8C61;
+    border-radius: 20px;
+}
+
+#linkedin img{
+    background-color: #FF8C61;
+}
+
+/* ------ FOOTER ------*/
+
+.footer{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 20vh; /* Adjust the height as needed */
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding */
+    flex-direction: row;
+    background-color: #4C63AF;
+}
+
+.footer-mess p{
+    color: white;
+}
+
+.footer-menu{
+    
+}
+.footer-contact{
+    text-align: left;
+}
+
+.footer-contact ul li{
+    list-style: none;
+}
+
+.footer-contact ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px ;
+}
+
+.footer-contact a img{
+    width: 20px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-contact a.git img {
+    width: 20px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    background-color: black;
+    border-radius: 20px;
+}
+.footer-contact a.link img {
+    width: 20px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #4C63AF ;
+    border-radius: 20px;
 }

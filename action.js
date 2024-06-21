@@ -72,3 +72,9 @@ function validateMessage() {
     return true;
 }
 
+function openResume() {
+    window.open('CV.pdf', '_blank');
+}
+
+
+
