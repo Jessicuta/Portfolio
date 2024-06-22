@@ -257,7 +257,7 @@ h3{
 }
 
 .info-table {
-    width: 100%; /* Make the table full width */
+    width: 75%; /* Make the table full width */
     border-collapse: collapse; /* Collapse the borders between cells */
 }
 
@@ -270,8 +270,9 @@ h3{
     display: flex; /* Use Flexbox to align items horizontally */
     align-items: center; /* Vertically center the items */
     height: 50vh;
-    width: 150vh;
+    width: 50vh;
     text-align: center;
+    background-color: #45a049;
 }
 
 #info-profil {
@@ -336,52 +337,87 @@ h3{
 
 /* ------ FOOTER ------*/
 
-.footer{
+.footer {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 20vh; /* Adjust the height as needed */
-    text-align: center; /* Center the content */
-    padding: 20px; /* Add some padding */
-    flex-direction: row;
-    background-color: #4C63AF;
+    justify-content: space-between;
+    background-color: #4c63af; /* Background color for the footer */
+    padding: 20px;
+    color: white; /* Text color for the footer */
+    height: 180px;
+
 }
 
-.footer-mess p{
+.footer-mess,
+.footer-menu,
+.footer-contact {
+    flex: 1;
+    margin: 0 20px; /* Margin between the elements */
+    border: 2px solid #45a049;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.footer-mess p {
     color: white;
+    text-align: center; /* Center the text inside the footer-menu */
 }
 
-.footer-menu{
-    
-}
-.footer-contact{
-    text-align: left;
+.footer-menu h3 {
+    margin-bottom: 10px; /* Space between the heading and the nav */
+    text-align: center; /* Center the heading */
 }
 
-.footer-contact ul li{
+.footer-menu nav {
+    text-align: center; /* Center the text inside the footer-menu */
+}
+
+.footer-menu nav ul {
+    padding: 0; /* Remove default padding */
+}
+
+.footer-menu nav ul li {
     list-style: none;
+    text-align: center; /* Center the text inside the footer-menu */
+    margin-bottom: 5px; /* Space between list items */
 }
 
-.footer-contact ul li a{
+.footer-menu ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px ;
+    font-size: 13px;
+    text-align: center; /* Center the text inside the footer-menu */
 }
 
-.footer-contact a img{
+
+.footer-contact{
+    line-height: 1.5;
+}
+.footer-contact ul li {
+    list-style: none;
+    line-height: 1.5;
+    
+}
+
+.footer-contact ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.footer-contact a img {
     width: 20px; /* Set the width of the images */
     height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align images with text */
 }
 
 .footer-contact a.git img {
-    width: 20px; /* Set the width of the images */
-    height: auto; /* Maintain aspect ratio */
     background-color: black;
     border-radius: 20px;
 }
+
 .footer-contact a.link img {
-    width: 20px; /* Set the width of the images */
-    height: auto; /* Maintain aspect ratio */
-    background-color: #4C63AF ;
+    background-color: #4C63AF;
     border-radius: 20px;
 }
